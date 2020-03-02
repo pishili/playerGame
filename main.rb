@@ -25,19 +25,19 @@ while (player1.still_lives && player2.still_lives) do
 
 	if answer == question.answer
 	puts "Yes you are correct!"
-  puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
-  else
-    player.lives -= 1
-    puts "Serously? No"
-    puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
-  end
-  current_player = (current_player + 1) % 2
-end
+	  puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
+	  else
+	    player.lives -= 1
+	    puts "Serously? No"
+	    puts "#{player1.name} #{player1.lives}/3 lives and #{player2.name} #{player2.lives}/3 lives"
+	  end
+	  current_player = (current_player + 1) % 2
+	end
 
-if player1.lives == 0
-   puts " #{player2.name} wins with a score #{player2.lives}/3 lives"
-elsif player2.lives == 0
-   puts " #{player1.name} wins with a score #{player1.lives}/3 lives"
-end
+	if player1.lives == 0
+	   puts " #{player2.name} wins with a score #{player2.lives}/3 lives"
+	elsif player2.lives == 0
+	   puts " #{player1.name} wins with a score #{player1.lives}/3 lives"
+	end
 
-puts " GAME OVER "
+	puts " GAME OVER "
